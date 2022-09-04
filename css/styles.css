@@ -77,8 +77,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: #757575;
+  color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 .communications-mail:hover,
 .communications-mail:focus {
@@ -398,7 +398,6 @@ img {
 .icon-envelope {
   width: 16px;
   height: 12px;
-  fill: var(--secondary-text-color);
   margin-right: 10px;
 }
 
@@ -406,10 +405,14 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--secondary-text-color);
 }
 .overlay {
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   width: 1600px;
   height: 600px;
 }
@@ -488,7 +491,7 @@ img {
   margin-left: 32px;
 }
 
-.join {
+.enter {
   margin-top: 72px;
   color: var(--white-text-color);
 }
@@ -512,4 +515,7 @@ img {
 .link.footer:hover,
 .link.footer:focus {
   background-color: var(---main-blue-color);
+}
+.enter {
+  text-transform: uppercase;
 }
